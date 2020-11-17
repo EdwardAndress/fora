@@ -1,7 +1,7 @@
 class Room < ApplicationRecord
 	before_create do
 		opentok = OpenTok::OpenTok.new ENV['VONAGE_API_KEY'], ENV['VONAGE_API_SECRET']
-		session = opentok.create_session
+		session = opentok.create_session media_mode: :routed
 		self.vonage_session_id = session.session_id
 	end
 end
