@@ -10,7 +10,18 @@ At the moment, there is not much going on in terms of features though!
 
 * Install the dependencies with `bundle install`
 
-* If you run into problems with webpacker, try `rails webpacker:compile`
+* If you run into problems with webpacker, try
+
+```
+bundle exec rails webpacker:install
+rails webpacker:compile
+```
+
+* Also make sure the db is created and migrated
+
+```
+rails db:create db:migrate
+```
 
 * Then you'll need to create at least one user.  You can either do that in the rails console or through the application GUI.
 
