@@ -1,24 +1,21 @@
-# README
+# Fora
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Fora is a multi-user video chat app, built using Rails, Stimulus and the Vonage SDK.  It is spefically designed with remote learning in mind.
 
-Things you may want to cover:
+At the moment, there is not much going on in terms of features though!
 
-* Ruby version
+## Getting started
 
-* System dependencies
+* You'll need to sign up for a free account at [vonage].  Once you've done that, get the api key and secret and stick them in your .bash_profile, or an equivalent location, so that the application can pick up ENV['VONAGE_API_KEY'] and ENV['VONAGE_API_SECRET'].
 
-* Configuration
+* Install the dependencies with `bundle install`
 
-* Database creation
+* If you run into problems with webpacker, try `rails webpacker:compile`
 
-* Database initialization
+* Then you'll need to create at least one user.  You can either do that in the rails console or through the application GUI.
 
-* How to run the test suite
+* To fire up the application do `rails s`
 
-* Services (job queues, cache servers, search engines, etc.)
+* By default, the application will run on `localhost:3000`
 
-* Deployment instructions
-
-* ...
+[vonage]: https://www.vonage.co.uk/communications-apis/video/
